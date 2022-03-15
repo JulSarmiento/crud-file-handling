@@ -82,7 +82,7 @@ class Container{
   async deleteAll(){
     try{
       const data = await fs.promises.writeFile(this._filename, '');
-      console.log(data);
+
     } catch (err) {
       console.log(err);
     }
